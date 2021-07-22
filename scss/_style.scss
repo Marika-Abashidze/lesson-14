@@ -1,0 +1,45 @@
+.wraper{
+    @include flex(flex,space-between,center);
+    .left-block{
+        width: $size;
+        height: $size;
+        background-color:$color01;
+        .title-block{
+            font-size: 30px;
+            font-family: $font01;
+            @include border(2px,solid,white);
+            @include transition(all,5s,linear,0.2s);
+            &:hover{
+                color: white;
+            
+            }
+        }
+    }
+    .right-block{
+        width: $size;
+        height: $size;
+        background-color:$color02;
+        .title-block-2{
+            font-size: 30px;
+            font-family:$font02;
+            &:hover{
+                color: red;
+            }
+
+        }
+    }
+}
+.wraper-box{
+    @include flex(flex,center,center);
+    .text1{
+        font-size: 30px;
+        font-family: $font01;
+        &:nth-child(1){
+            color: yellow;
+        }
+        &:nth-child(2){
+            color: green;
+        }
+
+    }
+}
